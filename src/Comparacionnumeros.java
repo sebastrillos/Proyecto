@@ -4,17 +4,19 @@ import java.util.Scanner;
 public class Comparacionnumeros {
     public static void main(String[] args) {
 
-        //Se crea un scanner para que ingresen los tres numeros.
-        Scanner numeros = new Scanner(System.in);
-        System.out.print("Ingrese el primer numero: ");
-        int numero1 = numeros.nextInt();
-        System.out.print("Ingrese el segundo numero: ");
-        int numero2 = numeros.nextInt();
-        System.out.print("Ingrese el tercer numero: ");
-        int numero3 = numeros.nextInt();
-
-        //Se cierra el scanner.
-        numeros.close();
+        int numero1;
+        int numero2;
+        int numero3;
+        try ( //Se crea un scanner para que ingresen los tres numeros.
+                Scanner numeros = new Scanner(System.in)) {
+            System.out.print("Ingrese el primer numero: ");
+            numero1 = numeros.nextInt();
+            System.out.print("Ingrese el segundo numero: ");
+            numero2 = numeros.nextInt();
+            System.out.print("Ingrese el tercer numero: ");
+            numero3 = numeros.nextInt();
+            //Se cierra el scanner.
+        }
 
         //Se usa el boolean.
         Boolean resultado = numero1 > numero2 && numero1 < numero3 ;
