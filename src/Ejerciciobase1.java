@@ -25,7 +25,7 @@ public class Ejerciciobase1 {
             }else{
                 System.out.println("no se puede dividir por cero!!!");
             }
-            
+            input.close();
         }
     }
 }

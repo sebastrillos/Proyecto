@@ -19,6 +19,7 @@ public class Ejercicio6 {
                 System.out.println("el numero es negativo");
             }
         }
+        input.close();
 
     }
 }
