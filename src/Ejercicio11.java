@@ -13,14 +13,16 @@ cuántos tienen notas mayores o iguales a 7 y cuántos menores.
             System.out.println("ingrese una nota: ");
             double nota = input.nextDouble();
             if (nota>=7) {
-                System.out.println("notas mayor igual a 7: ");
-                System.out.println(nota);
+
+               int mayores = 0;
+               mayores++;
+
             } else {
                 if (nota<7) {
                     System.out.println("notas menor que 7:");
                 }System.out.println(nota);
             }
-            input.close();
+            System.out.println("estudiantes con nota mayor igual a 7: ");
         }
         
     }
