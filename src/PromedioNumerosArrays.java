@@ -14,7 +14,9 @@ public class PromedioNumerosArrays {
         numeros[i] = input.nextInt();
     }
      int suma = 0;
+     System.out.println("el array es: ");
      for (int i = 0; i < numeros.length; i++) {
+        System.out.print(numeros[i] + " ");
          suma += numeros[i];
      }
      int promedio = suma / tamaño;
